@@ -1,0 +1,102 @@
+
+
+  <div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-6">Shopping Cart</h1>
+
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between">
+      <div class="w-full md:w-2/3">
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <div class="px-4 py-5 sm:px-6">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">
+              Cart Items
+            </h3>
+          </div>
+          <div class="border-t border-gray-200">
+            <ul role="list" class="divide-y divide-gray-200">
+              <li class="py-6 flex items-center px-4 sm:px-6">
+                <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+                  <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Product Image" class="h-full w-full object-cover object-center">
+                </div>
+                <div class="ml-4 flex-1 flex flex-col">
+                  <div>
+                    <div class="flex justify-between text-base font-medium text-gray-900">
+                      <h3>
+                        Product Name
+                      </h3>
+                      <p class="ml-4">$99.99</p>
+                    </div>
+                    <p class="mt-1 text-sm text-gray-500">Description</p>
+                  </div>
+                  <div class="flex-1 flex items-end justify-between text-sm">
+                    <div class="flex items-center space-x-2">
+                      <button class="bg-gray-200 rounded-md p-1 hover:bg-gray-300">
+                        <svg class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        </svg>
+                      </button>
+                      <input type="text" class="w-10 text-center" value="1">
+                      <button class="bg-gray-200 rounded-md p-1 hover:bg-gray-300">
+                        <svg class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="flex">
+                      <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500">
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/3 md:ml-6">
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <div class="px-4 py-5 sm:px-6">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">
+              Order Summary
+            </h3>
+          </div>
+          <div class="border-t border-gray-200">
+            <dl>
+              <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                  Subtotal
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                  $99.99
+                </dd>
+              </div>
+              <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                  Shipping
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                  $9.99
+                </dd>
+              </div>
+              <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                  Total
+                </dt>
+                <dd class="mt-1 text-sm font-semibold text-gray-900 sm:mt-0 sm:col-span-2">
+                  $109.98
+                </dd>
+              </div>
+            </dl>
+            <div class="px-4 py-5 sm:px-6">
+              <button class="w-full bg-indigo-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
