@@ -19,4 +19,5 @@ export class NavbarComponent {
     this.auth.isAdmin = false;
     this.router.navigate(['/login']);
   }
+
 }

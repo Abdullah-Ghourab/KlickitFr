@@ -22,12 +22,13 @@ export class LoginComponent {
       .subscribe((res: any) => {
         localStorage.setItem('token', JSON.stringify(res.token));
         this.auth.isLogged = true;
-        if (this.email == '') {
+        if (this.email == "Supplier@Klickit.com") {
           this.auth.isAdmin = true;
           localStorage.setItem('isAdmin', JSON.stringify('true'));
         }
+        console.log(this.auth.isAdmin)
         if (this.auth.isAdmin) {
-          this.router.navigate(['/offers']);
+          this.router.navigate(['/orders']);
         } else {
           this.router.navigate(['/home']);
         }
