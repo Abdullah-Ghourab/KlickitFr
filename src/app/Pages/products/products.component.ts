@@ -20,7 +20,7 @@ export class ProductsComponent {
   add(item: any) {
     const productToCart = [
       {
-        "productId": item.productId,
+        "productId": item.id,
         "productQuantity": 1
       }
     ]
@@ -28,4 +28,5 @@ export class ProductsComponent {
       window.alert("product successfully added to cart")
     })
   }
+
 }

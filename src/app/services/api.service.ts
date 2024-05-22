@@ -38,6 +38,7 @@ export class ApiService {
   addToCart(data: any) {
     return this.http.post("https://localhost:7184/api/Order", data, this.userToken())
   }
+
 }
 enum Status {
   requested = 1,
