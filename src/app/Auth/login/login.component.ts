@@ -26,7 +26,6 @@ export class LoginComponent {
           this.auth.isAdmin = true;
           localStorage.setItem('isAdmin', JSON.stringify('true'));
         }
-        console.log(this.auth.isAdmin)
         if (this.auth.isAdmin) {
           this.router.navigate(['/orders']);
         } else {

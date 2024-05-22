@@ -32,6 +32,12 @@ export class ApiService {
 
     }, this.userToken())
   }
+  getProducts() {
+    return this.http.get("https://localhost:7184/api/Products", this.userToken())
+  }
+  addToCart() {
+    return this.http.get("https://localhost:7184/api/Order?page=1", this.userToken())
+  }
 }
 enum Status {
   requested = 1,
