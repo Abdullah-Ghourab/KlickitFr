@@ -35,8 +35,8 @@ export class ApiService {
   getProducts() {
     return this.http.get("https://localhost:7184/api/Products", this.userToken())
   }
-  addToCart() {
-    return this.http.get("https://localhost:7184/api/Order?page=1", this.userToken())
+  addToCart(data: any) {
+    return this.http.post("https://localhost:7184/api/Order", data, this.userToken())
   }
 }
 enum Status {

@@ -17,4 +17,15 @@ export class ProductsComponent {
       this.products = res.data;
     })
   }
+  add(item: any) {
+    const productToCart = [
+      {
+        "productId": item.productId,
+        "productQuantity": 1
+      }
+    ]
+    this.api.addToCart(productToCart).subscribe((res: any) => {
+      window.alert("product successfully added to cart")
+    })
+  }
 }
