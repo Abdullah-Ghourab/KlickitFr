@@ -22,8 +22,10 @@ export class LoginComponent {
       .subscribe((res: any) => {
         localStorage.setItem('token', JSON.stringify(res.token));
         this.auth.isLogged = true;
-        // Should set flag isAdmin if the user is admin
-        // this.auth.isAdmin = true
+        if (this.email == '') {
+          this.auth.isAdmin = true;
+          localStorage.setItem('isAdmin', JSON.stringify('true'));
+        }
         if (this.auth.isAdmin) {
           this.router.navigate(['/offers']);
         } else {

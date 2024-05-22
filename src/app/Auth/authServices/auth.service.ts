@@ -12,6 +12,9 @@ export class AuthService {
     if (localStorage.getItem('token')) {
       this.isLogged = true;
     }
+    if (localStorage.getItem('isAdmin')) {
+      this.isAdmin = true;
+    }
   }
   login(data: any) {
     return this.http.post('https://localhost:7184/api/auth/login', data);
